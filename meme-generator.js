@@ -57,8 +57,8 @@ function init () {
     canvas.width = canvas.height = 0;
 
     // Default/Demo text
-    topTextInput.value = 'Top-Text';
-    bottomTextInput.value = "Bottom-Text"
+    topTextInput.value = "Top-Text";
+    bottomTextInput.value = "Bottom-Text";
 
     // Generate button click listener
     generateBtn.addEventListener('click', function () {
