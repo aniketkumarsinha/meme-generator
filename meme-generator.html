@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Meme Generator</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="meme-generator.css">
+    </head>
+    <body>
+        <header>
+            <h1>Generate Meme</h1>
+        </header>
+
+        <section class="meme-generator">
+        <center>
+        <p>
+            <input id="top-text"></input>
+            Text size: <input type="range" id="top-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
+        </p>
+        <p>
+            <input id="bottom-text"></input>
+            Text size: <input type="range" id="bottom-text-size-input" min="0.05" max="0.25" value="0.15" step="0.01">
+        </p>
+        <p>
+            <input type="file" id="image-input" accept="image/*">
+        </p>
+        <p>
+            <button class="bg-success" id="generate-btn">Generate</button>
+        </p>
+        <p>
+            <canvas id="meme-canvas" title="Right click -> &quot;Save image as...&quot;"></canvas>
+        </p>
+        </center>
+        </section>
+
+        <footer class="fixed-bottom">
+            Made with ❤ by DSC-BKBIET
+        </footer>
+
+        <script src="meme-generator.js"></script>
+    </body>
+</html>
